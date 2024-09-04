@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Slussen;
+    src: url(/fonts/Slussen-Compressed-Black.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 900;
+    font-stretch: compressed;
+}
+
+@font-face {
+    font-family: Slussen;
+    src: url(/fonts/Slussen-Expanded-Black.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 900;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: Slussen;
+    src: url(/fonts/Slussen-Regular.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family: Slussen;
+    src: url(/fonts/Slussen-Bold.woff2)format("woff2");
+    font-display: swap;
+    font-weight: 700;
+
+}
+
+html {
+    scroll-behavior: initial;
+    overflow: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Slussen;
+    font-size: 16px;
+    font-weight: 400;
+    background: #000;
+    color: #fff;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 85%;
+    border-left: 3px solid #ff98a2;
+    padding: 25px;
+    margin: 0;
+
+}
+
+h2 span {
+    display: block;
+}
+
+h3 {
+    font-size: 20px;
+    font-stretch: expanded;
+    color: #ff98a2;
+    line-height: 100%;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+section {
+    padding: 50px;
+
+}
+
+.col {
+    width: 50%;
+}
+
+#vertical {
+    height: 200vh;
+    width: 100vh;
+}
+
+.vertical_content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.vertical_content .col_left {
+    height: 100%;
+}
+
+.vertical_content .col_right {
+    width: 40%;
+}
+
+.vertical_item:not(:last-child) {
+    margin-bottom: 240px;
+}
+
+/* Horizonatl style section  */
+
+#horizontal {
+    padding: 100px 0;
+
+}
+
+.horizontal_content {
+    display: flex;
+}
+
+.horizontal_item {
+    border: 1px solid #efefef;
+    padding: 200px 150px;
+}
+
+.horizontal_item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.horizontal_num {
+    font-size: 80px;
+    font-weight: 900;
+    font-stretch: condensed;
+    color: #ff98a2;
+}
